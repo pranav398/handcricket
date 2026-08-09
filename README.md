@@ -34,19 +34,6 @@ The application includes authentication, match creation and joining, game dashbo
 - 🔥 Firebase-powered multiplayer functionality
 - 📱 Browser-based interface
 
-## 🎮 Game Flow
-
-A typical match follows the basic hand-cricket format:
-
-1. **Choose a game mode** — play against the computer or start/join a multiplayer match.
-2. **Set up the match** — multiplayer games require players to create or join a match.
-3. **Play an innings** — each turn, players make their hand-cricket choices.
-4. **Score runs** — the selected numbers determine whether the batter scores or loses the wicket.
-5. **Switch innings** — after the first innings ends, the other side gets its turn to bat.
-6. **Determine the winner** — the final scores are compared and the match result is shown.
-
-Multiplayer matches synchronize the game state between participating players. The project also supports dedicated **2v2** matches with multiple players on each side.
-
 ## 🎮 Game Modes
 
 ### 🤖 Computer Match
@@ -84,16 +71,6 @@ login.php
 logout.php
 ```
 
-
-## 🌐 Live Demo
-
-The game is currently live and playable at:
-
-**https://handcricket.gamer.gd**
-
-You can use the live deployment to try the game without setting up the project locally.
-
-> The live deployment may be updated as development continues.
 
 ## 🎮 Game Flow
 
