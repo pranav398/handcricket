@@ -1,0 +1,25 @@
+{
+  "rules": {
+    "rooms": {
+      "$roomId": {
+        ".read": true,
+        ".write": "auth != null"
+      }
+    },
+    "rooms2v2": {
+      "$roomId": {
+        ".read": true,
+        ".write": "auth != null",
+        "meta": {
+          ".validate": "newData.isObject() && newData.child('mode').val() === '2v2' && newData.child('overs').isNumber() && newData.child('wickets').isNumber() && newData.child('powerplay_overs').isNumber() && newData.child('cooldown_seconds').isNumber() && newData.child('status').isString() && newData.child('teaming_mode').isString() && newData.child('created').isNumber() && (!newData.child('cleanupAt').exists() || newData.child('cleanupAt').isNumber())"
+        },
+        "players": {
+          ".validate": "newData.isObject()",
+          "$playerId": {
+            ".validate": "newData.isObject() && newData.child('userId').isNumber() && newData.child('username').isString() && newData.child('online').isBoolean() && newData.child('joinedAt').isNumber()"
+          }
+        }
+      }
+    }
+  }
+}
